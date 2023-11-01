@@ -5,6 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "RustMunchausen",
+    platforms: [.iOS(.v15)],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
@@ -19,5 +20,10 @@ let package = Package(
         .testTarget(
             name: "RustMunchausenTests",
             dependencies: ["RustMunchausen"]),
+        .binaryTarget(
+            name: "Munchausen",
+            url: "https://github.com/.../releases/download/v0.0.1/bundle.zip",
+            checksum: "2c2348866b9ecd2b4b85efb7639641e040c3e3d1f9392f00029813a3d44c830a"
+        ),
     ]
 )
