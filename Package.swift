@@ -22,7 +22,7 @@ let package = Package(
             dependencies: ["RustMunchausen"]),
         .binaryTarget(
             name: "Munchausen",
-            url: "https://github.com/.../releases/download/v0.0.1/bundle.zip",
+            url: "https://github.com/jbuhler-c4/RustMunchausen/releases/download/untagged-17d166ecf16b925d1d1a/bundle.zip",
             checksum: "2c2348866b9ecd2b4b85efb7639641e040c3e3d1f9392f00029813a3d44c830a"
         ),
     ]
